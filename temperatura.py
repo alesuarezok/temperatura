@@ -30,6 +30,9 @@ def observar_clima():
 # temperatura entre los valores -40 y 0
     elif(temperatura < 0): # -40 > temperatura < 0
 		respuesta = "Sensacion del clima 'Helado'"
-# temperatura entre 0 y 15
+# carga de valores entre 0 y 15
     elif (temperatura >= 0) and (temperatura < 15): # 0 <= temperatura < 15  
 	    respuesta = "Sensacion del clima 'Frio'"
+# carga de valores entre 15 y 25
+    elif (temperatura >= 15) and (temperatura < 25): # 15 <= temperatura < 25
+	    respuesta = "Sensacion del clima 'Agradable'"
