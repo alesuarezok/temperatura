@@ -26,4 +26,7 @@ def observar_clima():
     temperatura=int(input("Ingrese un valor: "))
 # carga de temperatura invalida
     if(temperatura < -40) or (temperatura > 53):
-	    respuesta = "Entrada invalida" 
+		respuesta = "Entrada invalida"
+# temperatura entre los valores -40 y 0
+    elif(temperatura < 0): # -40 > temperatura < 0
+		respuesta = "Sensacion del clima 'Helado'"
