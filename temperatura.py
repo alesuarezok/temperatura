@@ -17,5 +17,13 @@ ____________|________________________________|
 ____________|________________________________|            
             |                                |
 temp >= 25  |  "Sensacion del clima caluroso"|
-____________|________________________________|
+____________|________________________________|"""
 
+# definicion
+def observar_clima():
+
+# ingreso de valor
+    temperatura=int(input("Ingrese un valor: "))
+# carga de temperatura invalida
+    if(temperatura < -40) or (temperatura > 53):
+	    respuesta = "Entrada invalida" 
