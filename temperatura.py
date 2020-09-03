@@ -39,3 +39,10 @@ def observar_clima():
 # carga de valores entre 25 y 32
     elif (temperatura >= 25) and (temperatura < 32): # 25 <= temperatura < 32 
 	    respuesta = "Sensacion del clima 'Caluroso'"
+# carga de valores entre 32 y temperatura maxima (53)
+    elif (temperatura >= 32): # 32 <= temperatura
+	    respuesta = "Sensacion del clima 'Muy caluroso'"
+# Imprime la "sensacion termica"
+    print (respuesta)
+    
+observar_clima() # Permite que el programa inicie directamente
