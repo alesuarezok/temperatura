@@ -26,22 +26,22 @@ def observar_clima():
     temperatura=int(input("Ingrese un valor: "))
 # carga de temperatura invalida
     if(temperatura < -40) or (temperatura > 53):
-		respuesta = "Entrada invalida"
+        respuesta = "Entrada invalida"
 # temperatura entre los valores -40 y 0
     elif(temperatura < 0): # -40 > temperatura < 0
-		respuesta = "Sensacion del clima 'Helado'"
+        respuesta = "Sensacion del clima 'Helado'"
 # carga de valores entre 0 y 15
-    elif (temperatura >= 0) and (temperatura < 15): # 0 <= temperatura < 15  
-	    respuesta = "Sensacion del clima 'Frio'"
+    elif (temperatura >= 0) and (temperatura < 15): # 0 <= temperatura < 15
+        respuesta = "Sensacion del clima 'Frio'"
 # carga de valores entre 15 y 25
     elif (temperatura >= 15) and (temperatura < 25): # 15 <= temperatura < 25
-	    respuesta = "Sensacion del clima 'Agradable'"
+        respuesta = "Sensacion del clima 'Agradable'"
 # carga de valores entre 25 y 32
     elif (temperatura >= 25) and (temperatura < 32): # 25 <= temperatura < 32 
-	    respuesta = "Sensacion del clima 'Caluroso'"
+        respuesta = "Sensacion del clima 'Caluroso'"
 # carga de valores entre 32 y temperatura maxima (53)
     elif (temperatura >= 32): # 32 <= temperatura
-	    respuesta = "Sensacion del clima 'Muy caluroso'"
+        respuesta = "Sensacion del clima 'Muy caluroso'"
 # Imprime la "sensacion termica"
     print (respuesta)
     
